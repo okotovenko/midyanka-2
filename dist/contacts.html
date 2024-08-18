@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="cz">
+<!--Підключення Open Graph -->
+<!--<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml"> -->
+<!--<html prefix="og: https://ogp.me/ns#"> -->
+
+<head>
+	<title>home/contacts</title>
+	<meta charset="UTF-8">
+	<!-- Не обов'язковий мета-тег для ІЕ (Internet Explorer) та його версії (Edge (можливі також версії  ..., IE8, IE9, IE10, IE11)) -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20240818130028">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<!-- Кодування сторінки: ширина області перегляду така ж, як і ширина екрану; зум за замовчуванням 100%; заборона масштабувати контент користувачу -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="ТУТ ВКАЗУЄМО КЛЮЧОВІ СЛОВА ДЛЯ ПОШУКОВИХ СИСТЕМ">
+	<meta name="description" content="ТУТ КОРОТКИЙ ОПИС-ПРИЗНАЧЕННЯ СТОРІНКИ">
+	<meta name="author" content="АВТОР">
+	<!-- Open Graph -->
+	<!-- <meta property="og:site_name" content="---" /> -->
+	<!--<meta property="og:description" content="---"> -->
+	<!--<meta property="og:title" content="---" /> -->
+	<!--<meta property="og:type" content="website" /> -->
+	<!--<meta property="og:image" content="img/1200_container.jpg" /> -->
+	<!-- <meta property="og:url" content="https://periodontist.com.ua/">  -->
+	<!--<meta property="og:image:secure_url" content="img/630_container.jpg" /> -->
+	<!--<meta property="og:image:type" content="image/jpg" /> -->
+	<!--<meta property="og:image:width" content="400" /> -->
+	<!--<meta property="og:image:height" content="300" /> -->
+	<!--<meta property="og:image:alt" content="container" /> -->
+	<!--<meta property="og:video" content="https://www.youtube.com/watch?v=HaLZOla399I&ab_channel=UaPro" /> -->
+	<!--<meta property="og:video:secure_url" content="https://www.youtube.com/watch?v=HaLZOla399I&ab_channel=UaPro" /> -->
+	<!--<meta property="og:video:type" content="application/x-shockwave-flash" /> -->
+	<!--<meta property="og:video:width" content="400" /> -->
+	<!--<meta property="og:video:height" content="300" /> -->
+</head>
+
+<body>
+	<div class="preloader">
+		<svg class="preloader__image" role="img" viewBox="0 0 512 512">
+			<path fill="currentColor" d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+			</path>
+		</svg>
+	</div>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class='header__menu menu'>
+					<button type='button' class='menu__icon icon-menu'> <span></span></button>
+					<nav class='menu__body'>
+						<ul class='menu__list'>
+							<li class='menu__item'><a href='index.html' class='menu__link'>Hlavní</a></li>
+							<li class='menu__item'><a href='services.html' class='menu__link'>Služby</a></li>
+							<a href='index.html' data-da=".header__menu, 768, 1" class='header__logo'><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt='logo'></picture></a>
+							<li class='menu__item'><a href='projects.html' class='menu__link'>Projekty</a></li>
+							<li class='menu__item'><a href='contacts.html' class='menu__link'>Kontakty</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__contacts contacts">
+				<div class="contacts__container">
+					<h2 class="contacts__title title"><span class="decor-left"></span>Kontakty<span class="decor-right"></span></h2>
+					<h3>Náš manažer vám zavolá zpět co nejdříve</h3>
+					<div class="contacts__block">
+						<div class="contacts__left">
+							<span>E-mail</span>
+							<a class="" href="mailto:midyanka@email.cz">midyanka@email.cz</a>
+							<span>Telefon</span>
+							<a class="" href="tel:+420 776 275 830">+420 776 275 830</a>
+							<span>Telefon</span>
+							<p>IČO: 28770030 DIČ: CZ860107338</p>
+						</div>
+						<form action="files/sendmail/sendmail.php" data-dev enctype="multipart/form-data" class="form" method="POST">
+							<input type="hidden" name="form_subject" value="Тема листа">
+							<label class="form-label">
+								<input type="text" data-required name="name" id="name" autocomplete="off" maxlength="255" data-error="Error" class="input" placeholder="Název">
+							</label>
+							<label class="form-label">
+								<input type="text" name="soname" id="soname" autocomplete="off" maxlength="255" class="input" placeholder="Příjmení">
+							</label>
+							<label class="form-label">
+								<input type="email" data-required name="email" id="email" autocomplete="off" maxlength="255" data-error="Error" class="input" placeholder="E-mail">
+							</label>
+							<label class="form-label">
+								<input type="tel" data-required name="tel" id="tel" autocomplete="off" maxlength="255" data-error="Error" class="input" placeholder="Telefonní číslo">
+							</label>
+							<label class="form-textarea">
+								<textarea placeholder="Vaše odvolání" name="what" id="what" autocomplete="off" maxlength="255" class="input"></textarea>
+							</label>
+							<button type="submit" class="button">Odeslat</button>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__left">
+					<a href='#' class='footer__logo'><img src='img/logo.png' alt='logo'></a>
+				</div>
+				<div class="footer__center"></div>
+				<div class="footer__right">
+					<div data-da=".footer__center, 880, 2" class="footer__top">
+						<nav class='footer__body'>
+							<ul class='footer__list'>
+								<li class='footer__item'><a href='index.html' class='footer__link'>Hlavní</a></li>
+								<li class='footer__item'><a href='services.html' class='footer__link'>Služba</a></li>
+								<li class='footer__item'><a href='projects.html' class='footer__link'>Projekt</a></li>
+								<li class='footer__item'><a href='contacts.html' class='footer__link'>Kontakty</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="footer__bottom">
+						<div class="footer__email">
+							<span>E-mail</span>
+							<a class="" href="mailto:midyanka@email.cz">midyanka@email.cz</a>
+						</div>
+						<div class="footer__phone">
+							<span>Telefon</span>
+							<a class="" href="tel:+420 776 275 830">+420 776 275 830</a>
+						</div>
+						<div class="footer__tel">
+							<span>Telefon</span>
+							<p>IČO: 28770030 DIČ: CZ860107338</p>
+						</div>
+						<div data-da=".footer__left, 1050, 2" class="footer__fb _icon-fb">
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="popup__text">
+					<h2 class="contacts__title title"><span class="decor-left"></span>Kontakty<span class="decor-right"></span>
+					</h2>
+					<h3>Náš manažer vám zavolá zpět co nejdříve</h3>
+					<form action="files/sendmail/sendmail.php" data-dev enctype="multipart/form-data" class="form" method="POST">
+						<input type="hidden" name="form_subject" value="Тема листа">
+						<label class="form-label">
+							<input type="text" data-required name="name" id="name" autocomplete="off" maxlength="255" data-error="Error" class="input" placeholder="Název">
+						</label>
+						<label class="form-label">
+							<input type="text" name="soname" id="soname" autocomplete="off" maxlength="255" class="input" placeholder="Příjmení">
+						</label>
+						<label class="form-label">
+							<input type="email" data-required name="email" id="email" autocomplete="off" maxlength="255" data-error="Error" class="input" placeholder="E-mail">
+						</label>
+						<label class="form-label">
+							<input type="tel" data-required name="tel" id="tel" autocomplete="off" maxlength="255" data-error="Error" class="input" placeholder="Telefonní číslo">
+						</label>
+						<label class="form-textarea">
+							<textarea placeholder="Vaše odvolání" name="what" id="what" autocomplete="off" maxlength="255" class="input input-textarea"></textarea>
+						</label>
+						<button type="submit" class="button">Odeslat</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20240818130028"></script>
+</body>
+
+</html>
