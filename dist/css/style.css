@@ -1402,6 +1402,7 @@ body::after {
 }
 
 .projects-page__item {
+  display: block;
   border-radius: 0.625rem;
   overflow: hidden;
   position: relative;
@@ -4373,6 +4374,13 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .contacts__left {
     max-width: 100%;
+  }
+}
+
+@media (max-width: 40.625em) {
+  .projects-page__items {
+    -ms-grid-columns: auto;
+    grid-template-columns: auto;
   }
 }
 
