@@ -1381,6 +1381,22 @@ body::after {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
+.projects-page__items .projects-page__slide>img,
+.projects-page__items .projects-page__slide>picture {
+  display: block;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.projects-page__items .projects-page__slide picture source,
+.projects-page__items .projects-page__slide picture img {
+  display: block;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .projects-page__item {
   display: block;
   border-radius: 0.625rem;
