@@ -1381,26 +1381,6 @@ body::after {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-.projects-page__items a {
-  aspect-ratio: 337/300;
-}
-
-.projects-page__items>img,
-.projects-page__items>picture {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.projects-page__items picture source,
-.projects-page__items picture img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .projects-page__item {
   display: block;
   border-radius: 0.625rem;
@@ -1471,6 +1451,7 @@ body::after {
 
 .projects-page__item>img,
 .projects-page__item>picture {
+  display: block;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -1479,6 +1460,7 @@ body::after {
 
 .projects-page__item picture source,
 .projects-page__item picture img {
+  display: block;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
